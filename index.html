@@ -25,9 +25,27 @@
 </body>
 
 <style>
+    /* 在手机上的适应宽度 */
+    @media screen and (max-width: 600px) {
+        #WebItem {
+            width: 70%;
+        }
+        button {
+            width: 80%;
+        }
+    }
+
+    /* 在浏览器中的适应宽度 */
+    @media screen and (min-width: 600px) {
+        #WebItem {
+            width: 40%;
+        }
+        button {
+            width: 70%;
+        }
+    }
+
     #WebItem {
-        width: 30%;
-        /* height: 50%; */
         margin: 30px auto;
         font-size: 28px;
         display: flex;
@@ -49,7 +67,6 @@
     }
 
     button {
-        width: 70%;
         height: 32px;
         margin: 8px;
         border: none;
